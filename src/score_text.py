@@ -1,8 +1,17 @@
 
 
+def score_text(text):
+    """ Input:
+            text: string - a string of characters. A guess at
+                a translation
+        Output:
+            scores: tuple - the frequency count score and word score
+    """
+    freq_score = get_frequency_count_score(text)
+    word_score = get_word_score(text)
+    return (freq_score, word_score)
 
-
-def check_frequency_count(text):
+def get_frequency_count_score(text):
     """ Input: 
             text: string - a string of characters. A guess at 
                 a translation
@@ -53,4 +62,3 @@ def get_words(text):
 
     """
     pass
-
