@@ -1,6 +1,5 @@
 import string
 import sys
-import numpy as np
 from itertools import cycle
 
 def inv_dict(t):
@@ -8,7 +7,7 @@ def inv_dict(t):
 
 def alpha_dict():
     d = dict()
-    for i,j in zip(string.ascii_lowercase, np.arange(1,27)):
+    for i,j in zip(string.ascii_lowercase, range(1,27)):
         d[i] = j
     return d
 
