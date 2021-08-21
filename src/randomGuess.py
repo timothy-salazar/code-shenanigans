@@ -11,16 +11,17 @@ def initialize_secrets():
                 secrets.append(line.strip())
         #         print("{}: {}".format(file, line.strip()))
         # print('\n')
-    print("Secrets: ")
-    print(secrets)
+    # print("Secrets: ")
+    # print(secrets)
     return secrets
 
-def initialize_key():
+def initialize_key(randomize):
     key = {}
 
     alphabet = list(string.ascii_lowercase + string.ascii_uppercase)
     shuffledAlphabet = list(string.ascii_lowercase + string.ascii_uppercase)
-    random.shuffle(shuffledAlphabet)
+    if randomize == True:
+        random.shuffle(shuffledAlphabet)
     pairs = zip(alphabet, shuffledAlphabet)
 
     # print("Key: ")
@@ -44,9 +45,21 @@ def swap_characters(secrets, key):
                 translatedSecret += character #Numbers don't need to be converted.
         # print(translatedSecret)
         translatedSecrets.append(translatedSecret)
-    print(translatedSecrets)
+    # print(translatedSecrets)
+    return translatedSecrets
 
+def pretty_print(text, key):
+    print('\nKey: ')
+    for letter in key:
+        print('({}=>{}) '.format(letter, key[letter]), end='')
+    print('\nText: ')
+    for word in text:
+        print(word, end=' ')
+    print('\n')
+    return True
 
-secrets = initialize_secrets()
-key = initialize_key()
-swap_characters(secrets, key)
+if __name__ == "__main__":
+    secrets = initialize_secrets()
+    key = initialize_key(True)
+    text = swap_characters(secrets, key)
+    pretty_print(text, key)
