@@ -19,6 +19,35 @@ def get_frequency_count_score(text):
             score: float - some sort of score that represents how
                 well the frequency count matches what we'd expect to see.
     """ 
+    english_frequencies = {
+        'a':.082,
+        'b':.015,
+        'c':.028,
+        'd':.043,
+        'e':.13,
+        'f':.022,
+        'g':.02,
+        'h':.061,
+        'i':.07,
+        'j':.0015,
+        'k':.0077,
+        'l':.04,
+        'm':.024,
+        'n':.067,
+        'o':.075,
+        'p':.019,
+        'q':.00095,
+        'r':.06,
+        's':.063,
+        't':.091,
+        'u':.028,
+        'v':.0098,
+        'w':.024,
+        'x':.0015,
+        'y':.02,
+        'z':.00074
+    }
+
 
     freq_count = get_frequency_count(text)
     # something
