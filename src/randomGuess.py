@@ -1,6 +1,7 @@
 import os
 import string
 import random
+from score_text import get_words
 
 def initialize_secrets():
     secrets = list()
@@ -65,12 +66,12 @@ def translate(secrets, key):
     # print(translatedSecrets)
     return translatedSecrets
 
-def pretty_print(text, key):
+def pretty_print(wordList, key):
     print('\nKey: ')
     for letter in key:
         print(f'({letter}=>{key[letter]}) ', end='')
-    print('\nText: ')
-    for word in text:
+    print('\nWordList: ')
+    for word in wordList:
         print(word, end=' ')
     print('\n')
     return True
@@ -78,5 +79,6 @@ def pretty_print(text, key):
 if __name__ == "__main__":
     secrets = initialize_secrets()
     key = initialize_key(True)
-    text = translate(secrets, key)
-    pretty_print(text, key)
+    wordList = translate(secrets, key)
+    pretty_print(wordList, key)
+    actualWords = get_words(wordList)
