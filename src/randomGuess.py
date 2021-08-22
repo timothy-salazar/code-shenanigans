@@ -48,7 +48,7 @@ def initialize_key(randomize):
 
     return key
 
-def swap_characters(secrets, key):
+def translate(secrets, key):
     translatedSecrets = list()
     for secret in secrets:
         translatedSecret = ""
@@ -68,7 +68,7 @@ def swap_characters(secrets, key):
 def pretty_print(text, key):
     print('\nKey: ')
     for letter in key:
-        print('({}=>{}) '.format(letter, key[letter]), end='')
+        print(f'({letter}=>{key[letter]}) ', end='')
     print('\nText: ')
     for word in text:
         print(word, end=' ')
@@ -78,5 +78,5 @@ def pretty_print(text, key):
 if __name__ == "__main__":
     secrets = initialize_secrets()
     key = initialize_key(True)
-    text = swap_characters(secrets, key)
+    text = translate(secrets, key)
     pretty_print(text, key)
