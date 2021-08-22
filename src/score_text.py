@@ -1,4 +1,4 @@
-
+import nltk
 
 def score_text(text):
     """ Input:
@@ -75,9 +75,9 @@ def get_word_score(text):
     words = get_words(text)
     pass
 
-def get_words(text):
+def get_words(wordList):
     """ Input:
-            text: string - a string of characters. A guess at
+            wordList: list of strings - a list of strings of characters. A guess at
                 a translation.
         Output:
             words: list of words contained in text that are present
@@ -90,4 +90,16 @@ def get_words(text):
     between "catamaran" as a word, or "cat", "a", "ran", etc. 
 
     """
-    pass
+    english_words = set(nltk.corpus.words.words())
+    # d = enchant.Dict("en_US")
+    actualWords = list()
+    for word in wordList:
+        word = word.lower()
+        # isWord = d.check(word)
+        if word in english_words:
+            actualWords.append(word)
+    print(actualWords)
+    return actualWords
+
+if __name__ == "__main__":
+    print(get_words(["helLO", "cat", "doggo", "HuMaN", "oinoinoin", "belch", "human", "hellO"]))
