@@ -4,15 +4,32 @@ import random
 
 def initialize_secrets():
     secrets = list()
+    characterSet = set()
+    characterFrequency = {}
+    otherSet = set()
     # Get all secret files into list.
     for file in os.listdir('src/secrets'):
         with open('src/secrets/'+file) as secretFile:
             for line in secretFile:
                 secrets.append(line.strip())
+                for character in line.strip():
+                    if character.isalpha():
+                        characterSet.add(character)
+                        if character not in characterFrequency:
+                            characterFrequency[character] = 1
+                        else:
+                            characterFrequency[character] +=1
+                    else:
+                        otherSet.add(character)
         #         print("{}: {}".format(file, line.strip()))
         # print('\n')
     # print("Secrets: ")
     # print(secrets)
+    print("Character set: {}".format(characterSet))
+    print("Total number of alphabetic characters: {}".format(len(characterSet)))
+    # print("Frequency of each character: {}".format(characterFrequency))
+    print("Other characters set: {}".format(otherSet))
+    print("Total number of other characters: {}".format(len(otherSet)))
     return secrets
 
 def initialize_key(randomize):
