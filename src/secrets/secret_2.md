@@ -32,7 +32,7 @@ Ce      | **C->M**, e->/i/  | MY| |
 MnND    | n->/igh/          | MIND | |
 SPIReT  | e->/i/            | SPIRIT | |
 fND     | f->A              | AND | |
-dNeRxI  | d->/e/, e->/i/    | ENIRxI | |
+dNeRxI  | d->/e/, e->/i/    | ENIRxI | energy? |
 gV      | g->O              | OV | |
 KERNeL  | e->/i/            | KERNEL | |
 MhRKS   |                   | MhRKS | |
@@ -50,7 +50,7 @@ Mk      | k->/ai/           | MAY | |
 HIZ     |                   | HIZ | |
 WIZDeM  |                   | WIZDOM | |
 fND     | f->A              | AND | |
-dNeRxI  |                   | ENIRxI | |
+dNeRxI  |                   | ENIRxI | energy? |
 GnD     | n->/igh/          | GUIDE | |
 gS      | g->O              | OS | |
 Tb      |                   | | "to" maybe?|
