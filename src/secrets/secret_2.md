@@ -2,7 +2,7 @@
 Uppercase
 |From | To| Notes|
 |---|---|----|
-|C | M |this is a wild guess|
+|C | TH |this is a wild guess|
 
 Lowercase
 |Index| From | To| Notes|
@@ -28,7 +28,7 @@ Lowercase
 | ----------- | ----------- | -----| -----|
 INSnD   | n->/igh/          | INSIDE |  |
 RdSTS   | d->/e/            | RESTS |  |
-Ce      | **C->M**, e->/i/  | MY| |
+Ce      | **C->TH**, e->/i/  | THE| |
 MnND    | n->/igh/          | MIND | |
 SPIReT  | e->/i/            | SPIRIT | |
 fND     | f->A              | AND | |
@@ -38,7 +38,7 @@ KERNeL  | e->/i/            | KERNEL | |
 MhRKS   |                   | MhRKS | |
 LIDeR   | e->/i/            | LIDIR | |
 gV      | g->O              | OV | |
-CI      | **C->M**          | MI | |
+CI      | **C->TH**          | THE | |
 307     |                   | 307 | |
 fND     | f->A              | AND | |
 GRkTeST | k->/ai/,e->/i/    | GREATEST | |
