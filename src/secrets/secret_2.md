@@ -1,11 +1,8 @@
 
 Uppercase
-|From | To|
-|---|---|
-|C | M |
-|1|  a |||
-|2|  b |||
-|3|  c |||
+|From | To| Notes|
+|---|---|----|
+|C | M |this is a wild guess|
 
 Lowercase
 |Index| From | To| Notes|
